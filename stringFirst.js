@@ -22,3 +22,31 @@ console.log(char); // W
 
 let char1 = 'Hello Wold'[0]
 console.log(char1); // H
+
+// Comparing Strings 
+
+let a = "James"
+let b = "Code"
+
+let comparing =(a,b) => {
+    if (a < b) {
+        console.log(`${a} is less than ${b}`);
+    } else if (a > b) {
+        console.log(`${a} is greater than ${b}`);        
+    } else {
+        console.log(`${a} and ${b} are equal`);
+    }
+    return
+}
+
+comparing(a, b) // James is greater than Born
+
+let isEqual = (str1,str2) => {
+    return str1.toUpperCase() === str2.toUpperCase()
+}
+
+let str1 = "james"
+let str2 = "james"
+
+console.log(isEqual(str1, str2)); // true
+
