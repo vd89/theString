@@ -50,3 +50,27 @@ let str2 = "james"
 
 console.log(isEqual(str1, str2)); // true
 
+// Distinction Between sting primitives and String Objects
+
+let strPrim = "foo"
+let strObj = new String(strPrim)
+
+console.log(strPrim) // foo
+console.log(strObj); // [String:'foo'] 
+
+console.log(typeof strPrim); // String
+console.log(typeof strObj); // Object
+
+let sOne = '2+2'
+let sTwo = new String('2+2')
+
+console.log(eval(sOne)); // 4
+console.log(eval(sTwo)); // [String: '2+2']
+console.log(eval(sTwo.valueOf())); // 4
+
+let strObjOne = new String("James")
+console.log(strObjOne); // [String: 'James']
+console.log(strObjOne.valueOf()); // James
+
+let x = new String("James Code")
+console.log(x.valueOf()); // James Code
